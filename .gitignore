@@ -1,6 +1,9 @@
 composer.phar
 /vendor/
+<<<<<<< HEAD
 /nbproject/*
+=======
+>>>>>>> 5e046c4d897f1a2f28c5a036dd1ca5abc0ada0e4
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
