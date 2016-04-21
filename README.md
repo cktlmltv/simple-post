@@ -67,5 +67,5 @@ Envie de contribuer, pas de soucis envoie moi un mail : cktlmltv@openmailbox.org
 [FontAwesome]:<https://fortawesome.github.io/Font-Awesome/> 
 [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
 [TheNounProject]:<https://thenounproject.com/>
-[simple-post.sql]:<https://raw.githubusercontent.com/cktlmltv/simple-post/master/simple-post.sql>
+[simple-post.sql]:<https://github.com/cktlmltv/simple-post/blob/master/simple-post.sql>
 
