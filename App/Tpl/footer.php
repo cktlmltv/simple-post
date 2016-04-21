@@ -1,19 +1,14 @@
 </div>
-<script type="text/javascript">
-<?php
-if ($header == 'view' || $header == 'edit') {
-    ?>
-        $(function () {
-    	var urlEdit = "<?= BASE_URL ?>edit/<?= $article['link'] ?>" + window.location.hash;
-    		var urlVIew = "<?= BASE_URL ?>view/<?= $article['link'] ?>" + window.location.hash;
-    			$("#sp-link-edit").html('<a href="' + urlEdit + '">Modifier</a>');
-    			$("#sp-link-view").html('<a href="' + urlVIew + '">Voir</a>');
-    		    })
-
-    <?php
-}
-?>
-
-</script>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted text-center">
+	<ul class="list-inline">
+	    <li><a target="_blank" href="https://raw.githubusercontent.com/cktlmltv/simple-post/master/LICENSE">License</a> -</li>
+	    <li><a target="_blank" href="mailto:cktlmltv@openmailbox.org">Contact</a> -</li>
+	    <li><a target="_blank" href="<?=BASE_URL?>About">About</a></li>
+	</ul>    
+	</p>
+    </div>
+</footer>
 </body>
 </html>

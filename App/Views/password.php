@@ -21,10 +21,10 @@
 	    $.post('<?= BASE_URL ?>connect/<?= $article['id'] ?>', {password: $('#pwd').val()}, function (result) {
 			    if (result.valid) {
 				window.top.location = "<?= BASE_URL ?>edit/<?= $article['link'] ?>" + window.location.hash;
-			    } else {
-				$('#msg').html('Ton mot de passe ne correspond pas :/')
-			    }
-			}, 'json');
-		    });
-		});
+						} else {
+						    $('#msg').html('Ton mot de passe ne correspond pas :/')
+						}
+					    }, 'json');
+					});
+				    });
 </script>

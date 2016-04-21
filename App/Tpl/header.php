@@ -2,17 +2,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/svg+xml" href="<?= BASE_URL ?>App/Assets/images/icon.svg">
+	<script type="text/javascript" src="<?= BASE_URL ?>vendor/components/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="<?= BASE_URL ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/main.js"></script>
+	<link rel="icon" type="image/svg+xml" href="<?= BASE_URL ?>App/Assets/images/noun_76598_cc.svg">
 	<link href="<?= BASE_URL ?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="<?= BASE_URL ?>App/Assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>App/Assets/css/content-tools.min.css">
 	<link href="<?= BASE_URL ?>App/Assets/css/main.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="<?= BASE_URL ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/content-tools.min.js"></script>
-	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/base64.min.js"></script>
-	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/sjcl.js"></script>
-	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/main.js"></script>
     </head>
     <body>
 	<div class="navbar">
@@ -24,7 +21,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		    </button> 
-		    <a class="navbar-brand" href="<?= BASE_URL ?>"><img class="img-responsive pull-left" src="<?= BASE_URL ?>App/Assets/images/icon.svg"  /><span>Single Post</span></a> 
+		    <a class="navbar-brand" href="<?= BASE_URL ?>"><img class="img-responsive pull-left" src="<?= BASE_URL ?>App/Assets/images/noun_76598_cc.svg"  /><span>Single Post</span></a> 
 		</div>
 		<?php
 		switch ($header) {

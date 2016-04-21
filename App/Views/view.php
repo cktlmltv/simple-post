@@ -27,47 +27,15 @@
 	</div>
     </div>
 </div>
+<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/sjcl.js"></script>
 <script type="text/javascript">
-
-    var title = '<?= $article['title'] ?>';
-    var article = '<?= $article['content'] ?>';
-    var signature = '<?= $article['author'] ?>';
-    var p, rp = {};
-    p = {ks: 256};
-    function loadContent() {
-	var hash = window.location.hash;
-	try
-	{
-	    var json = JSON.parse(title);
-	    if (json) {
-		var plaintext = sjcl.decrypt(hash, title, {}, rp);
-		$('.sp-title').html(plaintext);
-	    }
-	} catch (e) {
-	}
-	try
-	{
-	    var json = JSON.parse(article);
-	    if (json) {
-		plaintext = sjcl.decrypt(hash, article, {}, rp);
-		$('.sp-post').html(plaintext);
-	    }
-	} catch (e) {
-	}
-	try
-	{
-	    var json = JSON.parse(signature);
-	    if (json) {
-		plaintext = sjcl.decrypt(hash, signature, {}, rp);
-		$('.sp-sign').html(plaintext);
-	    }
-	} catch (e) {
-	}
-    }
     $(function () {
-
-	loadContent();
-    })
-
-
+	var title = '<?= $article['title'] ?>';
+	var article = '<?= $article['content'] ?>';
+	var signature = '<?= $article['author'] ?>';
+	loadContent(title, article, signature);
+	var urlEdit = "<?= BASE_URL ?>edit/<?= $article['link'] ?>" + window.location.hash;
+		var urlVIew = "<?= BASE_URL ?>view/<?= $article['link'] ?>" + window.location.hash;
+			setPostUrls(urlEdit, urlVIew)
+		    })
 </script>
