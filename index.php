@@ -67,7 +67,7 @@ $app->get('/password/{page}', function ($request, $response, $args) {
 });
 
 $app->post('/createPage', function ($request, $response, $args) {
-    if (isset($_POST['page']) && !empty($_POST['page'])) {
+    if (isset($_POST['tobor']) && $_POST['tobor'] == 1 && isset($_POST['page']) && !empty($_POST['page'])) {
 	$oPost = new Posts();
 	if (is_null($oPost->retrieve($_POST['page']))) {
 	    $result = $oPost->create($_POST['page'], $_POST['title'], $_POST['password']);

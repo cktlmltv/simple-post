@@ -17,18 +17,6 @@
 </div>
 <script type="text/javascript">
     $(function () {
-
-	$('#pwd-addon').on('click', function () {
-	    if ($(this).data('toggle')) {
-		$(this).html('<i class="fa fa-eye-slash"></i>');
-		$(this).data('toggle', false);
-		$('#pwd').attr('type', 'text');
-	    } else {
-		$(this).html('<i class="fa fa-eye"></i>');
-		$(this).data('toggle', true);
-		$('#pwd').attr('type', 'password');
-	    }
-	});
 	$('#btn-edit').on('click', function () {
 	    $.post('<?= BASE_URL ?>connect/<?= $article['id'] ?>', {password: $('#pwd').val()}, function (result) {
 			    if (result.valid) {

@@ -6,12 +6,13 @@
 		<h4>Une idée, est internet pour la diffusée.</h4>
 	    </div>
 	    <div class="col-md-3">
-		<div class="form-group">
+		<div id="pageForm" class="form-group">
 		    <p id="msg"></p>
-		    <label class="sr-only">Page</label>
 		    <input id="page" type="text" class="first form-control" placeholder="Page">
-		    <label class="sr-only">Mot de passe</label>
-		    <input id="pwd" type="text" class="last form-control" placeholder="Mot de passe">
+		    <div class="input-group">
+			<span class="input-group-addon last" id="pwd-addon" data-toggle="true"><i class="fa fa-eye"></i></span>
+			<input id="pwd" type="password" class="last form-control" placeholder="Mot de passe">
+		    </div>
 		</div>
 		<button id="btn-create" class="btn btn-warning">Créer ton poste</button>
 	    </div>
@@ -58,12 +59,13 @@
 	p = {ks: 256};
 	/*** encrypt */
 	var title = sjcl.encrypt(hash, page, p, rp);
-	$.post('<?= BASE_URL ?>createPage', {page: page, title: title, password: password}, function (result) {
+	var tobor = ($('input[name=tobor]').is(':checked')) ? 1 : 0;
+	$.post('<?= BASE_URL ?>createPage', {page: page, title: title, password: password, tobor: tobor}, function (result) {
 	    if (typeof result.link != "undefined") {
 		window.top.location = "<?= BASE_URL ?>edit/" + result.link + "#" + hash;
 	    } else if (typeof result.msg != "undefined")
 		$('#msg').html(result.msg);
 	}, 'json');
     });
-
+    $('<br/><label><input type="checkbox" name="tobor" required="true"> &nbsp; Je ne suis pas un robot</label>').appendTo($('#pageForm'));
 </script>
