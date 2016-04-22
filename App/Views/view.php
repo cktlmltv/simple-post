@@ -35,7 +35,8 @@
 	var signature = '<?= $article['author'] ?>';
 	loadContent(title, article, signature);
 	var urlEdit = "<?= BASE_URL ?>edit/<?= $article['link'] ?>" + window.location.hash;
-		var urlVIew = "<?= BASE_URL ?>view/<?= $article['link'] ?>" + window.location.hash;
-			setPostUrls(urlEdit, urlVIew)
-		    })
+		var urlPreview = "<?= BASE_URL ?>preview/<?= $article['link'] ?>" + window.location.hash;
+			var urlVIew = "<?= BASE_URL ?>view/<?= $article['link'] ?>" + window.location.hash;
+				setPostUrls(urlEdit, urlPreview, urlVIew)
+			    })
 </script>

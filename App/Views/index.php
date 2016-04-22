@@ -60,6 +60,7 @@
 	</div>
     </div>
 </div>
+<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/sjcl.js"></script>
 <script type="text/javascript">
     $(function () {
 	$('#btn-create').on('click', function () {

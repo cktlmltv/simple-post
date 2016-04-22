@@ -26,6 +26,14 @@
 		</tr>
 		<tr>
 		    <td class='text-right'>
+		<u>Aperçu</u> 
+		</td>
+		<td class='text-left'>
+		    &nbsp;<b id="sp-url-preview"></b>
+		</td>
+		</tr>
+		<tr>
+		    <td class='text-right'>
 		<u>Lire</u> 
 		</td>
 		<td class='text-left'>
@@ -83,8 +91,9 @@
 	var signature = '<?= (!empty($article['author'])) ? $article['author'] : "Toi" ?>';
 	loadContent(title, article, signature);
 	var urlEdit = "<?= BASE_URL ?>edit/<?= $article['link'] ?>" + window.location.hash;
+	var urlPreview = "<?= BASE_URL ?>preview/<?= $article['link'] ?>" + window.location.hash;
 		var urlVIew = "<?= BASE_URL ?>view/<?= $article['link'] ?>" + window.location.hash;
-			setPostUrls(urlEdit, urlVIew)
+			setPostUrls(urlEdit,urlPreview, urlVIew)
 			$('#btn-publish').on('click', function () {
 			    $.post('<?= BASE_URL ?>publishArticle/<?= $article['id'] ?>', function (result) {
 					    var html = '';
@@ -96,7 +105,7 @@
 						case 'live':
 						    html = '<span class="label label-success">En ligne</span>';
 						    var url = '<?= BASE_URL ?>view/' + result.link + window.location.hash;
-						    $('#location').html('Votre article est accéssible publiquement ici : <a href="' + url + '">' + url + '</a>');
+						    $('#location').html('Votre article est accéssible publiquement.');
 						    break;
 					    }
 					    $('#sp-post-status').html(html);

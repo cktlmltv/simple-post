@@ -21,7 +21,10 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		    </button> 
-		    <a class="navbar-brand" href="<?= BASE_URL ?>"><img class="img-responsive pull-left" src="<?= BASE_URL ?>App/Assets/images/noun_76598_cc.svg"  /><span>Single Post</span></a> 
+		    <a class="navbar-brand" href="<?= BASE_URL ?>">
+			<img class="img-responsive pull-left" src="<?= BASE_URL ?>App/Assets/images/noun_76598_cc.svg"  />
+			<span>Simple Post</span>
+		    </a> 
 		</div>
 		<?php
 		switch ($header) {
@@ -38,6 +41,7 @@
 			?>
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav navbar-right"> 
+				<li class="active" id="sp-link-preview"></li>
 				<li class="active" id="sp-link-view"></li>
 				<li class="active" style="padding: 15px;">Status : <font id="sp-post-status"><?php
 				    switch ($article['visibility']) {

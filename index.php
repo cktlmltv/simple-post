@@ -49,6 +49,17 @@ $app->get('/view/{page}', function ($request, $response, $args) {
 	require_once './App/Tpl/footer.php';
     }
 });
+$app->get('/preview/{page}', function ($request, $response, $args) {
+    $header = 'view';
+    if (!empty($args['page']) && $_SESSION['edit']) {
+	$oPost = new Posts();
+	$article = $oPost->retrieve($args['page']);
+	$article['visibility'] = "live";
+	require_once './App/Tpl/header.php';
+	require_once './App/Views/view.php';
+	require_once './App/Tpl/footer.php';
+    }
+});
 
 $app->get('/password/{page}', function ($request, $response, $args) {
     $header = '';

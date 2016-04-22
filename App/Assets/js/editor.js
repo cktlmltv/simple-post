@@ -4,7 +4,6 @@
     editor = ContentTools.EditorApp.get();
     editor.init('*[data-editable]', 'data-name');
     editor.addEventListener('saved', function (ev) {
-	console.log(window.location.hash);
 	var name, onStateChange, passive, payload, regions, xhr;
 	// Check if this was a passive save
 	passive = ev.detail().passive;
@@ -27,7 +26,6 @@
 	    p = {ks: 256};
 	    /*** encrypt */
 	    var json_sjcl = sjcl.encrypt(hash, regions[name], p, rp);
-	    console.log(json_sjcl);
 	    payload.append(name, json_sjcl);
 	}
 
@@ -47,7 +45,6 @@
 		}
 	    }
 	};
-	console.log(onStateChange);
 	xhr = new XMLHttpRequest();
 	xhr.addEventListener('readystatechange', onStateChange);
 	xhr.open('POST', 'http://127.0.0.1/single-post/saveArticle/' + $('#sp-post').data('postid'));
