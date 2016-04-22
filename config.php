@@ -5,8 +5,8 @@ switch ($_SERVER['SERVER_NAME']) {
 	define('BASE_URL', 'http://www.simplepost.xyz/');
 	define('HOST', 'localhost');
 	define('DBNAME', 'single-post');
-	define('USERNAME', 'root');
-	define('PASSWORD', 'root');
+	define('USERNAME', 'sp');
+	define('PASSWORD', 'S1mplePost#!62');
 	break;
     default :
 	define('BASE_URL', 'http://127.0.0.1/single-post/');
