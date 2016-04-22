@@ -2,7 +2,7 @@
 
 switch ($_SERVER['SERVER_NAME']) {
     case 'www.simplepost.xyz' : case 'simplepost.xyz' :
-	define('BASE_URL', 'http://www.simplepost.xyz//single-post/');
+	define('BASE_URL', 'http://www.simplepost.xyz/');
 	define('HOST', 'localhost');
 	define('DBNAME', 'single-post');
 	define('USERNAME', 'root');
