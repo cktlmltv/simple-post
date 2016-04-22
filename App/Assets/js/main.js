@@ -15,9 +15,9 @@ function setPostUrls(urlEdit, urlPreview, urlVIew) {
     $("#sp-link-edit").html('<a href="' + urlEdit + '">Modifier</a>');
     $("#sp-link-preview").html('<a href="' + urlPreview + '">Aperçu</a>');
     $("#sp-link-view").html('<a href="' + urlVIew + '">Voir</a>');
-    $("#sp-url-edit").html('<span id="sp-url-edition">' + urlEdit + '</span> <a href="' + urlEdit + '" rel="sidebar"  data-key="sp-url-edition" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
-    $("#sp-url-preview").html('<span id="sp-url-previewer">' + urlPreview + '</span> <a href="' + urlPreview + '" rel="sidebar" data-key="sp-url-previewer" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
-    $("#sp-url-view").html('<span id="sp-url-viewer">' + urlVIew + '</span> <a href="' + urlVIew + '" rel="sidebar" data-key="sp-url-viewer" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
+    $("#sp-url-edit").html('<span id="sp-url-edition">' + urlEdit + '</span> <a href="' + urlEdit + '" target="_blank" class="btn btn-info btn-xs"> Go</a> <a href="' + urlEdit + '" rel="sidebar"  data-key="sp-url-edition" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
+    $("#sp-url-preview").html('<span id="sp-url-previewer">' + urlPreview + '</span> <a href="' + urlPreview + '" target="_blank" class="btn btn-info btn-xs"> Go</a> <a href="' + urlPreview + '" rel="sidebar" data-key="sp-url-previewer" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
+    $("#sp-url-view").html('<span id="sp-url-viewer">' + urlVIew + '</span> <a href="' + urlVIew + '" target="_blank" class="btn-info btn-xs"> Go</a> <a href="' + urlVIew + '" rel="sidebar" data-key="sp-url-viewer" class="sp-bm-btn btn btn-warning btn-xs"> Pin!</a>');
 
     $(".sp-bm-btn").click(function () {
 	var url = $('#' + $(this).data('key')).html();

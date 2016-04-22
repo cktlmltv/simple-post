@@ -1,23 +1,9 @@
 html {
     position: relative;
     min-height: 100%;
-    background: rgba(236, 240, 241,1.0);
 }
 body {
-    background: rgba(236, 240, 241,1.0);
     margin-bottom: 60px;
-}
-h1,h2,h3,h4,h5{
-    color:rgba(44, 62, 80,1.0);
-}
-p{
-    color:rgba(0, 0, 0,1.0);
-}
-a{
-    color:rgba(44, 62, 80,1.0);
-}
-a:hover{
-    color:rgba(44, 62, 80,0.7);
 }
 /*
  * Class
@@ -91,8 +77,46 @@ a:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-#sp-post{
+#sp-header-edit{
     margin-top: 120px;
+}
+/*
+ * Colors
+ */
+html {
+    background: rgba(236, 240, 241,1.0);
+}
+body {
+    background: rgba(236, 240, 241,1.0);
+}
+h1,h2,h3,h4,h5{    
+    color:rgba(44, 62, 80,1.0);
+}
+.jumbotron h1,.jumbotron h2,.jumbotron h3,.jumbotron h4,.jumbotron h5{
+    color:rgba(0,0, 0,1.0);
+}
+p{
+    color:rgba(44, 62, 80,1.0);
+}
+a{
+    color:rgba(0,0, 0,1.0);
+}
+a:hover{
+    color:rgba(0, 0, 0,0.7);
+}
+.jumbotron{
+    background: rgba(246, 71, 71,1.0);
+}
+.text-primary{
+    color:rgba(39, 174, 96,1.0);
+}
+
+.text-info{
+    color:rgba(230, 126, 34,1.0);
+}
+
+.text-warning{
+    color :rgba(192, 57, 43,1.0)  ;
 }
 /*
  * Override Bootstrap
@@ -105,20 +129,6 @@ a:hover{
 }
 .container-fluid{
     padding:0px;
-}
-.jumbotron{
-    background: rgba(231, 76, 60,1.0);
-}
-.text-primary{
-    color:rgba(39, 174, 96,1.0);
-}
-
-.text-info{
-    color:rgba(230, 126, 34,1.0);
-}
-
-.text-warning{
-    color :rgba(192, 57, 43,1.0)  ;
 }
 .btn-xs{
     margin-bottom: 5px;
