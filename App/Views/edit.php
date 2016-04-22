@@ -5,9 +5,9 @@
 		<thead>
 		    <tr>
 			<td colspan="2">
-			    <h3>Les urls d'accées</h3>
+			    <h3>Vos urls d'accées</h3>
 			    <h5 class="text-danger">
-				Seul vos urls pouront decrypté votre post, ne les perdaient pas.
+				Seul vos urls peuvent decrypter votre écris, ne les perdaient pas.
 			    </h5>
 			</td>
 		    </tr>
@@ -22,7 +22,7 @@
 		<td class='text-left'><b id="sp-url-preview"></b></td>
 		</tr>
 		<tr>
-		    <td class='text-right'><u>Lire</u></td>
+		    <td class='text-right'><u>En ligne</u></td>
 		<td class='text-left'><b id="sp-url-view"></b></td>
 		</tr>
 		</tbody>
@@ -70,7 +70,6 @@
 <script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/sjcl.js"></script>
 <script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/editor.js"></script>
 <script type="text/javascript">
-
     $(function () {
 	var editor;
 	var title = '<?= (!empty($article['title'])) ? $article['title'] : "Ton Titre" ?>';
@@ -98,7 +97,6 @@
 						    $('#sp-post-status').html(html);
 						}, 'json');
 					    });
-
 					    $('#btn-draft').on('click', function () {
 						$.post('<?= BASE_URL ?>draftArticle/<?= $article['id'] ?>', function (result) {
 								var html = '';
@@ -109,13 +107,11 @@
 									break;
 								    case 'live':
 									html = '<span class="label label-success">En ligne</span>';
-									$('#location').html('Votre article est accéssible publiquement ici : <a href="' + '<?= BASE_URL ?>view/' + result.link + '>"<?= BASE_URL ?>view/' + result.link + '</a>');
+									$('#location').html('Votre article est accéssible publiquement.');
 									break;
 								}
 								$('#sp-post-status').html(html);
 							    }, 'json');
 							});
-
 						    });
-
 </script>

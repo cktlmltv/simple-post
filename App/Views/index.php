@@ -3,7 +3,7 @@
 	<div class="row">
 	    <div class="col-md-6 text-right">
 		<h3>Publier en ligne un simple billet !</h3>
-		<h4>Une idée, est internet pour la diffusée.</h4>
+		<h4>Une idée, et internet pour la diffusée.</h4>
 	    </div>
 	    <div class="col-md-3">
 		<div id="pageForm" class="form-group">
@@ -29,7 +29,7 @@
 		</div>
 		<h3>Hébergement du billet</h3>
 		<p>
-		    Simple et facile, vous n'avez qu'a écrire votre billet! <br/>
+		    Simple et facile, vous avez simple a écrire votre billet! <br/>
 		    <a href="<?= BASE_URL ?>/edit/demo#b8ee4749-6be7-8e75-076f-4660282fb4fd">Démo en ligne</a><br/>
 		    Mot de passe : demo
 		</p>
@@ -41,8 +41,8 @@
 
 		<h3>Aucun regard sur le contenu</h3>
 		<p>
-		    Vos écris sont crypté dés l'envoie vers les serveur,<br/>
-		    La clés de chiffrement est uniquement dans les urls généré.
+		    Vos écris sont cryptés dés l'envoie vers les serveur,<br/>
+		    la clés de chiffrement est uniquement dans les urls générées.
 		</p>
 	    </div>
 	    <div class="col-md-4">
@@ -54,7 +54,7 @@
 		<p>
 		    Les sources sont disponible sur <a href="https://github.com/cktlmltv/simple-post" target="_blank">github</a>
 		    <br/>
-		    Les sources sont publiées dans le domaine public (<a href="https://raw.githubusercontent.com/cktlmltv/simple-post/master/LICENSE" target="_blank">Licence</a>).
+		    Et dans le domaine public (<a href="https://raw.githubusercontent.com/cktlmltv/simple-post/master/LICENSE" target="_blank">Licence</a>).
 		</p>
 	    </div>
 	</div>
