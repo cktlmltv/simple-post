@@ -11,6 +11,15 @@ $(function () {
 	}
     });
 })
+function displayUrls() {
+    if ($(this).data('urlsdisplayed')) {
+	$('#sp-url-container').fadeOut();
+	$(this).data('urlsdisplayed',false)
+    } else {
+	$('#sp-url-container').fadeIn();
+	$(this).data('urlsdisplayed',true)
+    }
+}
 function setPostUrls(urlEdit, urlPreview, urlVIew) {
     $("#sp-link-edit").html('<a href="' + urlEdit + '">Modifier</a>');
     $("#sp-link-preview").html('<a href="' + urlPreview + '">Aperçu</a>');

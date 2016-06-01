@@ -1,6 +1,6 @@
 <div id="sp-post" class="container">
     <div class="row">
-	<div class="col-lg-6 col-lg-push-3">
+	<div class="col-xs-6 col-xs-push-3">
 	    <?php
 	    switch ($article['visibility']) {
 		case "live" :

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-	<div class="col-lg-6 col-lg-push-3 text-center">
+	<div class="col-sm-6 col-sm-push-3 text-center">
 	    <div class="form-group">
 		<label for="exampleInputEmail1"><h3>Modifier votre article nécessite un mot de passe.</h3></label>
 		<div class="input-group">

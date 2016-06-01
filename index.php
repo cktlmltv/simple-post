@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 use App\Models\Posts;
@@ -11,6 +10,8 @@ $header = '';
 $app = new \Slim\App(array(
     'debug' => true
 	));
+
+ header("Access-Control-Allow-Origin: *");
 
 $app->get('/', function ($request, $response, $args) {
     $header = '';

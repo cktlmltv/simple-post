@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div id='sp-create-form' class="jumbotron">
 	<div class="row">
-	    <div class="col-md-6 text-right">
+	    <div class="col-xs-4 col-xs-push-2 text-center">
 		<h3>Publier en ligne un simple billet !</h3>
 		<h4>Une idée, et internet pour la diffusée.</h4>
 	    </div>
-	    <div class="col-md-3">
+	    <div class="col-xs-4 col-xs-push-2 ">
 		<div id="pageForm" class="form-group">
 		    <p id="msg"></p>
 		    <input id="page" type="text" class="first form-control" placeholder="Page">
@@ -19,11 +19,10 @@
 	</div>
     </div>
 </div>
-<div id='sp-trash-form'></div>
 <div id='sp-explain' class="section">
     <div class="container">
 	<div class="row text-center">
-	    <div class="col-md-4">
+	    <div class="col-xs-4">
 		<div class="sp-explain-img">
 		    <img width="120"  src="<?= BASE_URL ?>App/Assets/images/noun_375517_cc.svg"/>
 		</div>
@@ -31,10 +30,10 @@
 		<p>
 		    Simple et facile, vous avez simple a écrire votre billet! <br/>
 		    <a href="<?= BASE_URL ?>/edit/demo#b8ee4749-6be7-8e75-076f-4660282fb4fd">Démo en ligne</a><br/>
-		    Mot de passe : demo
+		<p class="text-muted">Mot de passe : demo</p>
 		</p>
 	    </div>
-	    <div class="col-md-4">
+	    <div class="col-xs-4">
 		<div class="sp-explain-img">
 		    <img width="120" src="<?= BASE_URL ?>App/Assets/images/noun_76584_cc.svg"/>
 		</div>
@@ -45,7 +44,7 @@
 		    la clés de chiffrement est uniquement dans les urls générées.
 		</p>
 	    </div>
-	    <div class="col-md-4">
+	    <div class="col-xs-4">
 		<div class="sp-explain-img">
 		    <img width="120"  src="<?= BASE_URL ?>App/Assets/images/noun_669.svg"/>
 		</div>

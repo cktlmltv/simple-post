@@ -10,7 +10,7 @@ switch ($_SERVER['SERVER_NAME']) {
 	break;
     default :
 	define('BASE_URL', 'http://127.0.0.1/single-post/');
-	define('HOST', 'localhost');
+	define('HOST', '172.17.42.1');
 	define('DBNAME', 'single-post');
 	define('USERNAME', 'root');
 	define('PASSWORD', 'root');

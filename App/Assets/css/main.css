@@ -1,6 +1,7 @@
 html {
     position: relative;
-    min-height: 100%;
+    min-height: 100;
+    overflow-x:hidden;
 }
 body {
     margin-bottom: 60px;
@@ -11,12 +12,13 @@ body {
 .sp-title{
     font-size : 3em !important;
     font-weight: bold;
+    text-decoration: underline ;
 }
 .sp-post{
 
 }
 .sp-sign{
-    text-decoration: italic;
+    font-style: italic;
     float: right;
 }
 .sp-explain-img{
@@ -51,22 +53,17 @@ body {
 /*
  * ID
  */
+#main-content{
+    margin-top:50px;
+}
 #sp-create-form{
-    position: absolute;
     border-radius: 0px;
     top:0px;
     left:0px;
-    height: 45%;
     width: 100%;
-    padding-top: 150px;
+    padding: 20px 0px;
+    margin:0px;
     z-index: 2;
-}
-#sp-trash-form{
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    clear: both !important;
-    height: 47%;
 }
 #sp-explain{
     text-align: center;
@@ -79,6 +76,14 @@ body {
 }
 #sp-header-edit{
     margin-top: 120px;
+}
+
+#sp-header-edit a{
+    cursor: pointer;
+}
+
+#sp-header-edit .text-muted{
+    font-size: 12px;
 }
 /*
  * Colors
@@ -118,6 +123,14 @@ a:hover{
 .text-warning{
     color :rgba(192, 57, 43,1.0)  ;
 }
+
+.sp-title p{
+    color : rgba(0,0,0,1.0);
+}
+.navbar{
+    background: rgba(246, 71, 71,1.0);
+    border-radius: 0px;
+}
 /*
  * Override Bootstrap
  */
@@ -135,6 +148,9 @@ a:hover{
 }
 .list-inline>li {
     padding:0px;
+}
+.navbar-brand{
+    margin:0px !important;	    
 }
 /**
  * Override content tools
