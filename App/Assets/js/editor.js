@@ -1,5 +1,17 @@
 (function () {
-    var postUrl = "http://www.simplepost.xyz/";
+    //check Env
+    var pathArray = location.href.split('/');
+    var protocol = pathArray[0];
+    var host = pathArray[2];
+    var postUrl = protocol;
+    switch (host) {
+	case 'http://simplepost.xyz/':
+	    postUrl += "//simplepost.xyz/";
+	    break;
+	default:
+	    postUrl += "//127.0.0.1/single-post/";
+    }
+
     var req;
 
     ContentTools.StylePalette.add([new ContentTools.Style('By-line', 'article__by-line', ['p']), new ContentTools.Style('Caption', 'article__caption', ['p']), new ContentTools.Style('Example', 'example', ['pre']), new ContentTools.Style('Example + Good', 'example--good', ['pre']), new ContentTools.Style('Example + Bad', 'example--bad', ['pre'])]);

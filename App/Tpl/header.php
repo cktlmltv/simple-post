@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="<?= BASE_URL ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?= BASE_URL ?>App/Assets/js/main.js"></script>
 	<link href="<?= BASE_URL ?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="<?= BASE_URL ?>App/Assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="<?= BASE_URL ?>vendor/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>App/Assets/css/content-tools.min.css">
 	<link href="<?= BASE_URL ?>App/Assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
